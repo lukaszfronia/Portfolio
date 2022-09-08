@@ -21,11 +21,11 @@
     <title>Website &mdash; Portfolio</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header ">
+      <a href="#">
+        <img src="img/LOGO..png" alt="Author name logo" class="nav-logo" />
+      </a>
       <nav class="main-nav">
-        <a href="#">
-          <img src="img/LOGO..png" alt="Author name logo" class="nav-logo" />
-        </a>
         <ul class="main-nav-list">
           <li><a href="#hero" class="main-nav-link">Home</a></li>
           <li><a href="#about" class="main-nav-link">About</a></li>
@@ -33,10 +33,14 @@
           <li><a href="#contact" class="main-nav-link">Contact</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <section class="section-hero" id="hero">
       <div class="hero">
-        <div class="hero-text-box" data-aos="fade-right" data-aos-mirror="true">
+        <div class="hero-text-box" data-aos="fade-right">
           <h1 class="hero-primary">
             Hi
             <p>I'm <span class="hero-full-name">Fronia Łukasz</span></p>
@@ -47,7 +51,7 @@
             projects done by me.
           </p>
         </div>
-        <div class="hero-img-box" data-aos="fade-left" data-aos-mirror="true">
+        <div class="hero-img-box" data-aos="fade-left" >
           <img src="img/face.png" alt="Author face image" class="hero-img" />
         </div>
       </div>
@@ -164,7 +168,7 @@
             <button class="btn btn-form">Submit</button>
           </form>
         </div>
-        <div class="contact-details" data-aos="zoom-in-right" data-aos-delay="700">
+        <div class="contact-details" data-aos="zoom-in-left" data-aos-delay="700">
           <ul class="details-list">
             <li>
               <ion-icon name="home-outline" class="icon-detail-list"></ion-icon>
