@@ -10,7 +10,10 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-
+    <script
+      defer
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script defer src="script.js"></script>
 
     <title>Website &mdash; Portfolio</title>
@@ -25,7 +28,7 @@
           <li><a href="#hero" class="main-nav-link">Home</a></li>
           <li><a href="#about" class="main-nav-link">About</a></li>
           <li><a href="#projects" class="main-nav-link">Projects</a></li>
-          <li><a href="#" class="main-nav-link">Contact</a></li>
+          <li><a href="#contact" class="main-nav-link">Contact</a></li>
         </ul>
       </nav>
     </header>
@@ -83,29 +86,126 @@
     <section class="project-section" id="projects">
       <div class="project-container">
         <span class="subheading">My Projects</span>
-        <div class="box">
-          <div class="gallery">
-            <figure class="gallery-item">
-              <img src="img/gallery/gallery-1.png" alt="Omnifood Project" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="img/gallery/gallery-2.png" alt="Omnifood Project" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="img/gallery/gallery-3.png" alt="Omnifood Project" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="img/gallery/gallery-4.png" alt="Omnifood Project" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="img/gallery/gallery-5.png" alt="Omnifood Project" />
-            </figure>
-            <figure class="gallery-item">
-              <img src="img/gallery/gallery-6.png" alt="Omnifood Project" />
-            </figure>
+        <div class="slider">
+          <!-- #1 -->
+          <div class="slide">
+            <img
+              class="slide-photo"
+              src="img/gallery/gallery-1.png"
+              alt="Photo 1"
+            />
+            <p class="slide-description">Omnifood Project</p>
           </div>
+          <!-- #2 -->
+          <!-- <div class="slide">
+            <img
+              class="slide-photo"
+              src="img/gallery/gallery-2.png"
+              alt="Photo 1"
+            />
+            <p class="slide-description">Omnifood Project</p>
+          </div> -->
+          <!-- #3 -->
+          <!-- <div class="slide">
+            <img
+              class="slide-photo"
+              src="img/gallery/gallery-3.png"
+              alt="Photo 1"
+            />
+            <p class="slide-description">Omnifood Project</p>
+          </div> -->
+          <!-- #4 -->
+          <!-- <div class="slide">
+            <img
+              class="slide-photo"
+              src="img/gallery/gallery-4.png"
+              alt="Photo 1"
+            />
+            <p class="slide-description">Omnifood Project</p>
+          </div> -->
+          <!-- #5 -->
+          <!-- <div class="slide">
+            <img
+              class="slide-photo"
+              src="img/gallery/gallery-5.png"
+              alt="Photo 1"
+            />
+            <p class="slide-description">Omnifood Project</p>
+          </div> -->
+          <!-- #6 -->
+          <!-- <div class="slide">
+            <img
+              class="slide-photo"
+              src="img/gallery/gallery-6.png"
+              alt="Photo 1"
+            />
+            <p class="slide-description">Omnifood Project</p>
+          </div> -->
+          <button class="slider-btn slider__btn--left">
+            <ion-icon name="arrow-back-outline" class="icon-btn"></ion-icon>
+          </button>
+          <button class="slider-btn slider__btn--right">
+            <ion-icon name="arrow-forward-outline" class="icon-btn"></ion-icon>
+          </button>
         </div>
       </div>
     </section>
+
+    <section class="contact-section" id="contact">
+      <span class="subheading">Contact Me</span>
+      <div class="contact">
+        <div class="contact-text-box">
+          <form class="contact-form">
+            <input type="text" placeholder=" Your Full Name" />
+            <input type="email" placeholder="Your Email" />
+            <textarea placeholder="Your Message"></textarea>
+            <button class="btn btn-form">Submit</button>
+          </form>
+        </div>
+        <div class="contact-details">
+          <ul class="details-list">
+            <li>
+              <ion-icon name="home-outline" class="icon-detail-list"></ion-icon>
+              <span> Chabrów 19/10 45-221 Opole</span>
+            </li>
+
+            <li>
+              <ion-icon name="mail-outline" class="icon-detail-list"></ion-icon>
+              <span> lukaszfronia99@gmail.com</span>
+            </li>
+
+            <li>
+              <ion-icon
+                name="phone-portrait-outline"
+                class="icon-detail-list"
+              ></ion-icon>
+              <span>696129815 </span>
+            </li>
+          </ul>
+          <div class="details-icon">
+            <a href="www.linkedin.com/in/łukasz-fronia-9119bb235">
+              <ion-icon name="logo-linkedin" class="icon-details"></ion-icon>
+
+            </a>
+            <a href="https://github.com/lukaszfronia">
+              <ion-icon name="logo-github" class="icon-details"></ion-icon>
+
+            </a>
+          </div>
+          <button class="btn btn-CV">Download CV</button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container ">
+          <a href="#" class="footer-logo">
+            <img src="img/LOGO..png" class="logo" alt="Author logo" />
+          </a>
+          <p class="copyright">
+            Copyright &copy; <span class="year">2027</span> by Łukasz Fronia, Inc.
+            All rights reserved.
+          </p>
+        </div>
   </body>
 </html>
