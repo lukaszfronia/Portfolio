@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -34,7 +35,7 @@
     </header>
     <section class="section-hero" id="hero">
       <div class="hero">
-        <div class="hero-text-box">
+        <div class="hero-text-box" data-aos="fade-right" data-aos-mirror="true">
           <h1 class="hero-primary">
             Hi
             <p>I'm <span class="hero-full-name">Fronia Łukasz</span></p>
@@ -45,29 +46,29 @@
             projects done by me.
           </p>
         </div>
-        <div class="hero-img-box">
+        <div class="hero-img-box" data-aos="fade-left" data-aos-mirror="true">
           <img src="img/face.png" alt="Author face image" class="hero-img" />
         </div>
       </div>
     </section>
     <section class="language-section">
       <div class="language-container">
-        <h2 class="heading-languages">Known languages</h2>
+        <h2 class="heading-languages" data-aos="fade-down"  data-aos-mirror="false" >Known languages</h2>
         <div class="logos">
-          <img src="img/html-5.png" alt="HTML logo" />
-          <img src="img/css-3.png" alt="CSS logo" />
-          <img src="img/js.png" alt="JS logo" />
+          <img src="img/html-5.png" alt="HTML logo" data-aos="zoom-in-up"  data-aos-delay="100"/>
+          <img src="img/css-3.png" alt="CSS logo" data-aos="zoom-in-up"   data-aos-delay="500"/>
+          <img src="img/js.png" alt="JS logo" data-aos="zoom-in-up"  data-aos-delay="900"/>
         </div>
       </div>
     </section>
     <section class="about-section" id="about">
       <div class="about-container">
-        <span class="subheading">About Me</span>
+        <span class="subheading" data-aos="fade-down">About Me</span>
         <div class="about">
-          <div class="about-img-box">
+          <div class="about-img-box" data-aos="zoom-in-right" data-aos-delay="500">
             <img src="img/About.png" alt="Author image " class="about-img" />
           </div>
-          <div class="about-text-box">
+          <div class="about-text-box" data-aos="flip-down" data-aos-delay="300">
             <h2 class="heading-about">I'm Łukasz</h2>
             <p class="about-description">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla
@@ -85,8 +86,8 @@
     </section>
     <section class="project-section" id="projects">
       <div class="project-container">
-        <span class="subheading">My Projects</span>
-        <div class="slider">
+        <span class="subheading" data-aos="fade-down">My Projects</span>
+        <div class="slider"data-aos="slide-up">
           <!-- #1 -->
           <div class="slide">
             <img
@@ -152,8 +153,8 @@
     </section>
 
     <section class="contact-section" id="contact">
-      <span class="subheading">Contact Me</span>
-      <div class="contact">
+      <span class="subheading" data-aos="fade-down" data-aos-delay="500">Contact Me</span>
+      <div class="contact" data-aos="zoom-out">
         <div class="contact-text-box">
           <form class="contact-form">
             <input type="text" placeholder=" Your Full Name" />
@@ -162,7 +163,7 @@
             <button class="btn btn-form">Submit</button>
           </form>
         </div>
-        <div class="contact-details">
+        <div class="contact-details" data-aos="zoom-in-right" data-aos-delay="700">
           <ul class="details-list">
             <li>
               <ion-icon name="home-outline" class="icon-detail-list"></ion-icon>
@@ -197,9 +198,9 @@
       </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" >
       <div class="footer-container ">
-          <a href="#" class="footer-logo">
+          <a href="#" class="footer-logo" >
             <img src="img/LOGO..png" class="logo" alt="Author logo" />
           </a>
           <p class="copyright">
@@ -207,5 +208,30 @@
             All rights reserved.
           </p>
         </div>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+  // Global settings:
+  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+  initClassName: 'aos-init', // class applied after initialization
+  animatedClassName: 'aos-animate', // class applied on animation
+  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+  
+
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 320, // offset (in px) from the original trigger point
+  delay: 200, // values from 0 to 3000, with step 50ms
+  duration: 800, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: false, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
+        </script>
   </body>
 </html>
