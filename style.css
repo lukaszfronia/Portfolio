@@ -123,11 +123,6 @@ html {
 
 .hero-img {
   width: 80%;
-
-  transition: all 0.3s;
-}
-.hero-img:hover {
-  transform: scale(1.3);
 }
 /* **************************** */
 /* KNOWN LANGUAGES SECTION */
