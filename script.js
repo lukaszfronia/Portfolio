@@ -2,13 +2,13 @@
 
 const header = document.querySelector(".header");
 const btnMobile = document.querySelector(".btn-mobile-nav");
-const btns = document.querySelectorAll("a:link");
+const btns = document.querySelectorAll(".nav-link");
 const navHeight = header.getBoundingClientRect().height;
 const sectionHero = document.querySelector(".section-hero");
 
-const year = document.querySelector(".year");
+// const year = document.querySelector(".year");
 
-year.innerHTML = new Date().getFullYear();
+// year.innerHTML = new Date().getFullYear();
 
 const options = {
   root: null,
@@ -62,3 +62,55 @@ btns.forEach((btn) =>
     }
   })
 );
+
+const slides = document.querySelectorAll(".slide");
+const btnLeft = document.querySelector(".slider__btn--left");
+const btnRight = document.querySelector(".slider__btn--right");
+// Slider
+const slider = () => {
+  let curSlide = 0;
+  const maxSlide = slides.length;
+
+  // Functions
+
+  const goToSlide = (slide) => {
+    slides.forEach((s, i) => {
+      // -100, 0, 100, 200
+      s.style.transform = `translateX(${100 * (i - slide)}%)`;
+    });
+  };
+
+  const nextSlide = () => {
+    if (curSlide === maxSlide - 1) {
+      curSlide = 0;
+    } else {
+      curSlide++;
+    }
+    goToSlide(curSlide);
+  };
+
+  const prevSlide = () => {
+    if (curSlide === 0) {
+      curSlide = maxSlide - 1;
+    } else {
+      curSlide--;
+    }
+    goToSlide(curSlide);
+  };
+
+  const init = () => {
+    goToSlide(0);
+  };
+  init();
+
+  // Event handlers
+
+  btnRight.addEventListener("click", nextSlide);
+  btnLeft.addEventListener("click", prevSlide);
+
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "ArrowLeft") prevSlide();
+    e.key === "ArrowRight" && nextSlide();
+  });
+};
+slider();
