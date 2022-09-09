@@ -185,6 +185,9 @@ body {
 .about-section {
   padding: 9.6rem 0;
 }
+.about-container {
+  margin-bottom: 14rem;
+}
 .about {
   max-width: 130rem;
   margin: 0 auto;
@@ -223,40 +226,44 @@ body {
 .project-section {
   padding: 0 3.2rem;
 }
-.slider {
-  max-width: 70rem;
-  margin: 0 auto;
-  position: relative;
+.project-container {
   margin-bottom: 9.6rem;
 }
 
-.slide {
-  display: flex;
-  flex-direction: column;
-  gap: 6.4rem;
-  align-items: center;
-  background-color: #edf7fe;
-  padding: 3.2rem 4.8rem;
-  margin-bottom: 4.8rem;
-  border-radius: 30px;
+/* SLIDER */
+.slider {
+  max-width: 80rem;
+  height: 60rem;
+  margin: 0 auto;
+
   position: relative;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.132);
+
+  background-color: #edf7fe;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.125);
+
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  overflow: hidden;
 }
-.slide-photo {
-  max-width: 100%;
-  opacity: 0.9;
-  border-radius: 15px;
-}
-.slide-description {
+
+.slide {
   position: absolute;
-  background-color: #74c0fc;
-  color: #e3f2fe;
-  padding: 3.2rem 4.8rem;
-  left: 50%;
-  bottom: 0;
-  transform: translate(-50%, 50%);
-  font-size: 2rem;
-  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* THIS creates the animation! */
+  transition: transform 1s;
+}
+
+.slide > img {
+  border-radius: 12px;
+  object-fit: cover;
+  transform: scale(0.7);
 }
 
 .slider-btn {
@@ -271,6 +278,10 @@ body {
   justify-content: center;
   cursor: pointer;
   position: absolute;
+  transition: all 0.1s ease;
+}
+.slider-btn:active {
+  background-color: #d3eaff;
 }
 
 .icon-btn {
@@ -281,13 +292,13 @@ body {
 .slider__btn--left {
   left: 0;
   top: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(10%, -50%);
 }
 
 .slider__btn--right {
   right: 0;
   top: 50%;
-  transform: translate(50%, -50%);
+  transform: translate(-10%, -50%);
 }
 
 /* **************************** */
@@ -349,13 +360,35 @@ body {
   box-shadow: 0 12px 12px rgba(0, 0, 0, 0.125);
 }
 
+.btn-CV:link,
+.btn-CV:visited {
+  text-decoration: none;
+  background-color: #4dabf7;
+  border-radius: 16px;
+  padding: 1.2rem 2.4rem;
+  font-family: inherit;
+  font-size: 1.2rem;
+  color: #e7f5ff;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.125);
+  transition: all 0.3s ease;
+}
+
 .btn {
   border: none;
+  cursor: pointer;
   background-color: #4dabf7;
   border-radius: 16px;
   width: 12rem;
   height: 4rem;
   color: #e7f5ff;
+  box-shadow: 0 12px 12px rgba(0, 0, 0, 0.125);
+  transition: transform 0.3s ease;
+}
+.btn-CV:active,
+.btn-CV:hover,
+.btn:active,
+.btn:hover {
+  transform: translateY(5%);
 }
 
 .details-list {
@@ -453,7 +486,7 @@ body {
   }
 
   .slider {
-    max-width: 60rem;
+    max-width: 80rem;
   }
 
   .details-list li {
@@ -532,6 +565,11 @@ body {
     font-size: 1.4rem;
   }
 
+  .slide > img {
+    max-width: 90%;
+    transform: scale(0.8);
+  }
+
   .details-list {
     padding: 3.2rem 4.8rem;
   }
@@ -579,7 +617,7 @@ body {
   }
 
   .slider {
-    max-width: 50rem;
+    max-width: 70rem;
   }
 
   .slide-description {
@@ -641,7 +679,11 @@ body {
     font-size: 1rem;
   }
   .slider {
-    max-width: 35rem;
+    max-width: 45rem;
+    height: 30rem;
+  }
+  .slide img {
+    transform: scale(0.7);
   }
   .slide-description {
     padding: 1.8rem 2.4rem;
