@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico" />
     <link rel="stylesheet" href="style.css" />
     <script
       defer
@@ -21,16 +21,16 @@
     <title>Website &mdash; Portfolio</title>
   </head>
   <body>
-    <header class="header ">
+    <header class="header">
       <a href="#">
         <img src="img/LOGO..png" alt="Author name logo" class="nav-logo" />
       </a>
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a href="#hero" class="main-nav-link">Home</a></li>
-          <li><a href="#about" class="main-nav-link">About</a></li>
-          <li><a href="#projects" class="main-nav-link">Projects</a></li>
-          <li><a href="#contact" class="main-nav-link">Contact</a></li>
+          <li><a href="#hero" class="main-nav-link nav-link">Home</a></li>
+          <li><a href="#about" class="main-nav-link nav-link">About</a></li>
+          <li><a href="#projects" class="main-nav-link nav-link">Projects</a></li>
+          <li><a href="#contact" class="main-nav-link nav-link">Contact</a></li>
         </ul>
       </nav>
       <button class="btn-mobile-nav">
@@ -51,18 +51,39 @@
             projects done by me.
           </p>
         </div>
-        <div class="hero-img-box" data-aos="fade-left" >
+        <div class="hero-img-box" data-aos="fade-left">
           <img src="img/face.png" alt="Author face image" class="hero-img" />
         </div>
       </div>
     </section>
     <section class="language-section">
       <div class="language-container">
-        <h2 class="heading-languages" data-aos="fade-down"  data-aos-mirror="false" >Known languages</h2>
+        <h2
+          class="heading-languages"
+          data-aos="fade-down"
+          data-aos-mirror="false"
+        >
+          Known languages
+        </h2>
         <div class="logos">
-          <img src="img/html-5.png" alt="HTML logo" data-aos="zoom-in-up"  data-aos-delay="100"/>
-          <img src="img/css-3.png" alt="CSS logo" data-aos="zoom-in-up"   data-aos-delay="500"/>
-          <img src="img/js.png" alt="JS logo" data-aos="zoom-in-up"  data-aos-delay="900"/>
+          <img
+            src="img/html-5.png"
+            alt="HTML logo"
+            data-aos="zoom-in-up"
+            data-aos-delay="100"
+          />
+          <img
+            src="img/css-3.png"
+            alt="CSS logo"
+            data-aos="zoom-in-up"
+            data-aos-delay="500"
+          />
+          <img
+            src="img/js.png"
+            alt="JS logo"
+            data-aos="zoom-in-up"
+            data-aos-delay="900"
+          />
         </div>
       </div>
     </section>
@@ -70,7 +91,11 @@
       <div class="about-container">
         <span class="subheading" data-aos="fade-down">About Me</span>
         <div class="about">
-          <div class="about-img-box" data-aos="zoom-in-right" data-aos-delay="500">
+          <div
+            class="about-img-box"
+            data-aos="zoom-in-right"
+            data-aos-delay="500"
+          >
             <img src="img/About.png" alt="Author image " class="about-img" />
           </div>
           <div class="about-text-box" data-aos="flip-down" data-aos-delay="300">
@@ -92,61 +117,26 @@
     <section class="project-section" id="projects">
       <div class="project-container">
         <span class="subheading" data-aos="fade-down">My Projects</span>
-        <div class="slider"data-aos="slide-up">
-          <!-- #1 -->
+        <div class="slider"data-aos="fade-up" data-aos-delay="800">
           <div class="slide">
-            <img
-              class="slide-photo"
-              src="img/gallery/gallery-1.png"
-              alt="Photo 1"
-            />
-            <p class="slide-description">Omnifood Project</p>
+            <img src="img/gallery/gallery-1.png" alt="Photo 1" />
           </div>
-          <!-- #2 -->
-          <!-- <div class="slide">
-            <img
-              class="slide-photo"
-              src="img/gallery/gallery-2.png"
-              alt="Photo 1"
-            />
-            <p class="slide-description">Omnifood Project</p>
-          </div> -->
-          <!-- #3 -->
-          <!-- <div class="slide">
-            <img
-              class="slide-photo"
-              src="img/gallery/gallery-3.png"
-              alt="Photo 1"
-            />
-            <p class="slide-description">Omnifood Project</p>
-          </div> -->
-          <!-- #4 -->
-          <!-- <div class="slide">
-            <img
-              class="slide-photo"
-              src="img/gallery/gallery-4.png"
-              alt="Photo 1"
-            />
-            <p class="slide-description">Omnifood Project</p>
-          </div> -->
-          <!-- #5 -->
-          <!-- <div class="slide">
-            <img
-              class="slide-photo"
-              src="img/gallery/gallery-5.png"
-              alt="Photo 1"
-            />
-            <p class="slide-description">Omnifood Project</p>
-          </div> -->
-          <!-- #6 -->
-          <!-- <div class="slide">
-            <img
-              class="slide-photo"
-              src="img/gallery/gallery-6.png"
-              alt="Photo 1"
-            />
-            <p class="slide-description">Omnifood Project</p>
-          </div> -->
+          <div class="slide">
+            <img src="img/gallery/gallery-2.png" alt="Photo 2" />
+          </div>
+          <div class="slide">
+            <img src="img/gallery/gallery-3.png" alt="Photo 3" />
+          </div>
+          <div class="slide">
+            <img src="img/gallery/gallery-4.png" alt="Photo 4" />
+          </div>
+          <div class="slide">
+            <img src="img/gallery/gallery-5.png" alt="Photo 4" />
+          </div>
+          <div class="slide">
+            <img src="img/gallery/gallery-6.png" alt="Photo 4" />
+          </div>
+        
           <button class="slider-btn slider__btn--left">
             <ion-icon name="arrow-back-outline" class="icon-btn"></ion-icon>
           </button>
@@ -156,7 +146,7 @@
         </div>
       </div>
     </section>
-
+    
     <section class="contact-section" id="contact">
       <span class="subheading" data-aos="fade-down" data-aos-delay="500">Contact Me</span>
       <div class="contact" data-aos="zoom-out">
@@ -189,22 +179,25 @@
             </li>
           </ul>
           <div class="details-icon">
-            <a href="www.linkedin.com/in/łukasz-fronia-9119bb235">
+            <a href="www.linkedin.com/in/łukasz-fronia-9119bb235" target="_blank">
               <ion-icon name="logo-linkedin" class="icon-details"></ion-icon>
 
             </a>
-            <a href="https://github.com/lukaszfronia">
+            <a href="https://github.com/lukaszfronia" target="_blank">
               <ion-icon name="logo-github" class="icon-details"></ion-icon>
 
             </a>
           </div>
-          <button class="btn btn-CV">Download CV</button>
+        
+          <a href="CV.pdf" class="btn-CV" download="CV-ŁukaszFronia">Download CV</a>
         </div>
       </div>
     </section>
 
     <footer class="footer" >
       <div class="footer-container ">
+
+
           <a href="#" class="footer-logo" >
             <img src="img/LOGO..png" class="logo" alt="Author logo" />
           </a>
@@ -212,31 +205,29 @@
             Copyright &copy; <span class="year">2027</span> by Łukasz Fronia, Inc.
             All rights reserved.
           </p>
-        </div>
-        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-        <script>
-          AOS.init({
-  // Global settings:
-  disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-  startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
-  initClassName: 'aos-init', // class applied after initialization
-  animatedClassName: 'aos-animate', // class applied on animation
-  useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-  disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-  debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-  throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-  
+        </div> 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        // Global settings:
+        disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+        startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+        initClassName: "aos-init", // class applied after initialization
+        animatedClassName: "aos-animate", // class applied on animation
+        useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+        disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+        debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+        throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
 
-  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-  offset: 320, // offset (in px) from the original trigger point
-  delay: 200, // values from 0 to 3000, with step 50ms
-  duration: 800, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
-  once: false, // whether animation should happen only once - while scrolling down
-  mirror: false, // whether elements should animate out while scrolling past them
-  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
-
-});
-        </script>
+        // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+        offset: 320, // offset (in px) from the original trigger point
+        delay: 200, // values from 0 to 3000, with step 50ms
+        duration: 800, // values from 0 to 3000, with step 50ms
+        easing: "ease", // default easing for AOS animations
+        once: false, // whether animation should happen only once - while scrolling down
+        mirror: false, // whether elements should animate out while scrolling past them
+        anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+      });
+    </script>
   </body>
 </html>
