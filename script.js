@@ -6,9 +6,9 @@ const btns = document.querySelectorAll(".nav-link");
 const navHeight = header.getBoundingClientRect().height;
 const sectionHero = document.querySelector(".section-hero");
 
-// const year = document.querySelector(".year");
+const year = document.querySelector(".year");
 
-// year.innerHTML = new Date().getFullYear();
+year.innerHTML = new Date().getFullYear();
 
 const options = {
   root: null,
