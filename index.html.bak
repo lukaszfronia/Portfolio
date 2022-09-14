@@ -16,7 +16,6 @@
       defer
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
-  
     <script defer src="script.js"></script>
 
     <title>Website &mdash; Portfolio</title>
@@ -102,8 +101,7 @@
           <div class="about-text-box" data-aos="flip-down" data-aos-delay="300">
             <h2 class="heading-about">I'm Łukasz</h2>
             <p class="about-description">
-             I graduated from the Opole University of Technology with an engineering degree in Computer Science. I'm continuing my studies in a master's degree program in Computer Science as well.
-			 I'm interested in computer games and volleyball. I'm currently looking for a job where I can use my skills and improve them as a Front-end Developer.
+             I graduated from the Opole University of Technology with an engineering degree in Computer Science. I am continuing my studies in a master's degree program in Computer Science as well.
             </p>
           </div>
         </div>
@@ -174,8 +172,7 @@
             </li>
           </ul>
           <div class="details-icon">
-              
-            <a href="https://pl.linkedin.com/in/%C5%82ukasz-fronia-9119bb235?trk=profile-badge" target="_blank">
+            <a href="www.linkedin.com/in/łukasz-fronia-9119bb235" target="_blank">
               <ion-icon name="logo-linkedin" class="icon-details"></ion-icon>
 
             </a>
