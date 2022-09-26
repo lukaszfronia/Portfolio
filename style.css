@@ -148,7 +148,7 @@ body {
   width: 80%;
 }
 /* **************************** */
-/* KNOWN LANGUAGES SECTION */
+/* lEARNING PATH SECTION */
 /* **************************** */
 
 .language-section {
@@ -168,14 +168,23 @@ body {
 .logos {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .logos img {
-  height: 9.6rem;
-  transition: all 0.3s;
+  height: 7.8rem;
 }
-.logos img:hover {
-  transform: scale(1.4);
+
+.current {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.current-title {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
 }
 
 /* **************************** */
@@ -473,6 +482,9 @@ body {
   .hero-description {
     font-size: 1.6rem;
   }
+  .logos img {
+    height: 6.4rem;
+  }
 
   .about-img {
     max-width: 90%;
@@ -554,8 +566,11 @@ body {
   .hero-img {
     width: 70%;
   }
+  .current-title {
+    font-size: 1.6rem;
+  }
   .logos img {
-    height: 6.4rem;
+    height: 4.8rem;
   }
 
   .heading-about {
@@ -603,6 +618,9 @@ body {
 
   .hero-description {
     font-size: 1rem;
+  }
+  .logos img {
+    height: 3.2rem;
   }
   .about {
     grid-template-columns: 1fr;
@@ -671,6 +689,12 @@ body {
   }
   .hero-img-box {
     text-align: center;
+  }
+  .current-title {
+    font-size: 1.2rem;
+  }
+  .logos img {
+    height: 2.4rem;
   }
   .about-img {
     max-width: 50%;
