@@ -35,9 +35,9 @@ const writeText = () => {
   heroDescription.innerHTML = text.slice(0, i);
   i++;
   if (i > text.length) {
-    setTimeout(() => {
-      i = 0;
-    }, 500);
+    // setTimeout(() => {
+    //   i = 0;
+    // }, 500);
   }
 };
 setInterval(writeText, 100);
